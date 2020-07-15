@@ -1,17 +1,14 @@
 import React from "react";
 import { Provider } from "react-redux";
-import "./App.css";
 import store from "./store";
+import {MainLayout} from './MainLayout'
 
-function App() {
+const App = () => {
   return (
     <Provider store={store}>
-      <div className="App">
-        <input className="search" placeholder="поиск" type="text" />
-        <div className="tips"></div>
-      </div>
+      <MainLayout/>
     </Provider>
   );
-}
+};
 
 export default App;

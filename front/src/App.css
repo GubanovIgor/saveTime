@@ -1,20 +1,21 @@
-.App {
-  text-align: center;
-}
-
 .search {
+  display: block;
+
   width: 400px;
   height: 30px;
 
   padding: 5px;
+  margin: auto;
+  margin-top: 100px;
 
   border-radius: 10px;
   border: 1px solid gray;
 }
 
 .tips {
+  flex-direction: column;
   width: 400px;
-  height: 200px;
+  height: auto;
 
   margin: auto;
   margin-top: 5px;
@@ -22,4 +23,17 @@
 
   border-radius: 10px;
   box-shadow: 0 0 10px -7px;
+}
+
+.tip {
+  color: gray;
+
+  padding: 5px;
+
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tip:hover {
+  background-color: #c7ebff;
 }

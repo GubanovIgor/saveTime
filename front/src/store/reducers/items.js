@@ -9,6 +9,7 @@ export const itemsReducer = (state = initialState, action) => {
     case actionTypes.GET_ITEMS:
       return {
         ...state,
+        items: action.payload ? action.payload : [],
       };
     default:
       return state;
